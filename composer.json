@@ -1,0 +1,56 @@
+{
+	"name"        : "pressmodo/wp-attributes",
+	"description" : "An helper library to generate attributes for HTML elements.",
+	"keywords"    : [ "wordpress", "pressmodo", "attributes" ],
+	"homepage"    : "https://github.com/pressmodo/wp-attributes",
+	"license"     : "GPL-3.0-or-later",
+	"authors"     : [
+		{
+			"name"     : "Pressmodo",
+			"email"    : "hello@pressmodo.com",
+			"homepage" : "https://pressmodo.com",
+			"role"     : "Developer"
+		},
+		{
+			"name"     : "Alessandro Tesoro",
+			"email"    : "hello@sematico.com",
+			"homepage" : "https://alessandrotesoro.me",
+			"role"     : "Developer"
+		},
+		{
+			"name"     : "Alessandro Tesoro",
+			"email"    : "hello@sematico.com",
+			"homepage" : "https://sematico",
+			"role"     : "Founder & MD"
+		}
+	],
+	"support"     : {
+		"issues" : "https://github.com/pressmodo/wp-attributes/issues"
+	},
+	"autoload"    : {
+		"psr-4" : {
+			"Pressmodo\\Attributes\\" : "src/"
+		},
+		"files": [ "helpers.php" ]
+	},
+	"autoload-dev": {
+		"psr-4" : {
+			"Pressmodo\\Attributes\\Test\\" : "tests"
+		}
+	},
+	"require": {
+		"php": ">=5.6"
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+		"pressmodo/phpcs-config": "dev-master",
+		"phpunit/phpunit": "^6.5.5",
+		"php-mock/php-mock-phpunit": "^2.5"
+	},
+	"scripts": {
+		"lint": "phpcs .",
+		"lint-fix": "phpcbf .",
+		"phpunit": "phpunit",
+		"phpunit-coverage": "phpunit --coverage-text"
+	}
+}
